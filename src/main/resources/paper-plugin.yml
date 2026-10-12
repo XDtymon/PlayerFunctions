@@ -1,0 +1,9 @@
+name: PlayerFunctions
+prefix: PlayerFunctions
+version: '${version}'
+
+main: com.jakisniekot.playerFunctions.Main
+api-version: '26.2'
+load: POSTWORLD
+
+authors: [ JakisNieKot ]

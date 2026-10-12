@@ -1,0 +1,7 @@
+
+
+
+playerChat:
+
+  default: "{prefix} &f{player} &7: &f{message}"
+
