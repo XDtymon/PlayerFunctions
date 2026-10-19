@@ -1,0 +1,44 @@
+name: PlayerFunctions
+prefix: PlayerFunctions
+version: '${version}'
+
+main: com.jakisniekot.playerFunctions.Main
+api-version: '26.2'
+load: POSTWORLD
+softdepend:
+  - Vault
+  - AuthMe
+authors: [ JakisNieKot ]
+
+commands:
+  playerfunctions:
+    usage: /playerfunctions
+  ignore:
+    usage: /ignore add|remove <player>
+  reply:
+    aliases:
+      - r
+    usage: /reply <msg>
+  message:
+    aliases:
+      - msg
+    usage: /msg <player> <msg>
+  vanish:
+    aliases:
+      - v
+    usage: /vanish
+permissions:
+  playerfunctions.admin:
+    default: op
+  playerfunctions.ignore:
+    default: true
+  playerfunctions.message:
+    default: true
+  playerfunctions.reply:
+    default: true
+  playerfunctions.vanish.use:
+    default: op
+  playerfunctions.vanish.auto:
+    default: false
+  playerfunctions.vanish.see:
+    default: op

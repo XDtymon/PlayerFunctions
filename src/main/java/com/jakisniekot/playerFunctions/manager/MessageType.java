@@ -1,4 +1,4 @@
-package com.jakisniekot.playerFunctions.listener;
+package com.jakisniekot.playerFunctions.manager;
 
 public class MessageType {
 

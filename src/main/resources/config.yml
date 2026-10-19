@@ -1,7 +1,47 @@
 
+noPermission: "&cBrak permisji"
+targetNotOnline: "&cGracz &f%player%&c nie jest online"
+selfTargetError: "&cNiemożesz ustawić siebie jako &fcel komendy"
+reload: "&aPrzeładowano plugin"
 
+ignoreUsageError: "&7Użycie: &f/ignore add|remove <player>"
+ignoreAddSuccess: "&7Dodano gracza &f%player%&7 do listy &fignorowanych"
+ignoreRemoveSuccess: "&7Usunięto gracza &f%player%&7 z listy &fignorowanych"
 
+msgUse: "&e%sender% &6» &e%target% &8>> &7%message%"
+msgUsageError: "&7Użycie: &f/msg <player> <wiadomosc>"
+noOneToReplyError: ""
+
+# PLAYER EVENT MESSAGES
+firstTimeJoinMessage: "&6[&e+&6] &7Witaj, &f%player% &7na &#FA251Eᴍ&#F93832ᴀ&#F74B45ʏ&#F65E59ᴏ &#F38481ѕ&#F19794ᴍ&#F0AAA8ᴘ&7! &7Jesteś naszym &f#%allTimePlayerCount% &7graczem na serwerze!"
+joinMessage: "&8[&a+&8] &7%player%"
+quitMessage: "&8[&c-&8] &7%player%"
+
+vanishON: "&aJesteś niewidzialny!"
+vanishOFF: "&cJesteś widzialny!"
+
+authMePath: "plugins/AuthMe/authme.db"
+
+# PLAYER CHAT
 playerChat:
+  owner:
+    colorMessage: true
+    message: "{prefix} &e{player} &6>> &f{message}"
+  default:
+    colorMessage: false
+    message: "{prefix} &f{player} &7>> &f{message}"
 
-  default: "{prefix} &f{player} &7: &f{message}"
+# DEATH MESSAGES
+killedWithNothing: "&4&lpięści"
+deathMessages:
+  player_attack: "&8[&4☠&8] &c%victim% &7został zabity przez &c%killer% &7używając %item%"
+  fall: "&8[&4☠&8] &c%victim% &7spadł z wysokości"
+  explosion: "&8[&4☠&8] &c%victim% &7wyleciał w powietrze"
+  lava: "&8[&4☠&8] &c%victim% &7wykąpał się w lawie"
+  drown: "&8[&4☠&8] &c%victim% &7utonął"
+  mob_attack: "&8[&4☠&8] &c%victim% &7został zabity przez &c%mob%"
+  fly_into_wall: "&8[&4☠&8] &c%victim% &7okazał się miernym lotnikiem"
+  default: "&8[&4☠&8]&8[&4☠&8] &c%victim% &7zginął"
+
+firstJoinItems: []
 

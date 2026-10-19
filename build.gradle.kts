@@ -7,10 +7,17 @@ plugins {
 repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
+    maven("https://repo.codemc.io/repository/maven-public/")
+
+    maven("https://jitpack.io")
 }
 
 dependencies {
+    compileOnly("fr.xephi:authme:5.6.0-SNAPSHOT")
     compileOnly("io.papermc.paper:paper-api:26.2.build.+")
+    compileOnly("com.github.MilkBowl:VaultAPI:1.7") {
+        isTransitive = false
+    }
 }
 
 java {
@@ -32,7 +39,7 @@ tasks {
 
     processResources {
         val props = mapOf("version" to version)
-        filesMatching("paper-plugin.yml") {
+        filesMatching("plugin.yml") {
             expand(props)
         }
     }
